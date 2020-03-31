@@ -2,8 +2,9 @@ package edu.mysore.asas.aura_hospital;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -137,6 +138,7 @@ public class AddHospital extends AppCompatActivity implements OnClickListener{
                 intent.putExtra("mri",MRI);
                 intent.putExtra("ct",CT);
                 intent.putExtra("xray",Xray);
+                Log.d("Passed value", pathos);
                 startActivity(intent);
             }
         }

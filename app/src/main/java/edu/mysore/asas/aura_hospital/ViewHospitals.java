@@ -1,7 +1,8 @@
 package edu.mysore.asas.aura_hospital;
 
-import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -12,8 +13,7 @@ import com.firebase.ui.database.FirebaseListAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
-public class RemoveHospital extends AppCompatActivity {
+public class ViewHospitals extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
     private ListView listView;
@@ -21,10 +21,10 @@ public class RemoveHospital extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_remove_hospital);
+        setContentView(R.layout.activity_view_hospitals);
 
         listView=findViewById(R.id.listHospitalsR);
-        mDatabase=FirebaseDatabase.getInstance().getReferenceFromUrl("https://aura-9fb32.firebaseio.com/hospitalslist/AllHospitals");
+        mDatabase= FirebaseDatabase.getInstance().getReferenceFromUrl("https://aura-9fb32.firebaseio.com/hospitalslist/AllHospitals");
         FirebaseListAdapter<String> firebaseListAdapter=new FirebaseListAdapter<String>(this,String.class,android.R.layout.simple_list_item_1,mDatabase) {
             @Override
             protected void populateView(View v, String value, int position)
@@ -38,8 +38,8 @@ public class RemoveHospital extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(RemoveHospital.this, RemoveHosDet.class);
-                intent.putExtra("hosid", listView.getItemAtPosition(position).toString());
+                Intent intent = new Intent(ViewHospitals.this, ViewHospitalsAfterSelection.class);
+                intent.putExtra("hosId", listView.getItemAtPosition(position).toString());
                 startActivity(intent);
             }
         });

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewHospitalsAfterSelection">
+
+    <TextView
+        android:id="@+id/hospitalId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginBottom="35dp"
+        android:text="Hospital ID"
+        app:layout_constraintBottom_toTopOf="@+id/hospitalName2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cardios2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Cardios"
+        app:layout_constraintStart_toStartOf="@+id/anesthos2"
+        app:layout_constraintTop_toBottomOf="@+id/anesthos2" />
+
+    <TextView
+        android:id="@+id/anesthos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Anesthos"
+        app:layout_constraintStart_toStartOf="@+id/xray2"
+        app:layout_constraintTop_toBottomOf="@+id/xray2" />
+
+    <TextView
+        android:id="@+id/erValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="ER Value"
+        app:layout_constraintEnd_toEndOf="@+id/ents2"
+        app:layout_constraintStart_toEndOf="@+id/ents2"
+        app:layout_constraintTop_toBottomOf="@+id/ents2" />
+
+    <TextView
+        android:id="@+id/xray2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="40dp"
+        android:text="Xray"
+        app:layout_constraintStart_toStartOf="@+id/hospitalName2"
+        app:layout_constraintTop_toBottomOf="@+id/hospitalName2" />
+
+    <TextView
+        android:id="@+id/ents2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Ents"
+        app:layout_constraintStart_toStartOf="@+id/ct2"
+        app:layout_constraintTop_toBottomOf="@+id/ct2" />
+
+    <TextView
+        android:id="@+id/latitude2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Latitude"
+        app:layout_constraintStart_toStartOf="@+id/longitude2"
+        app:layout_constraintTop_toBottomOf="@+id/longitude2" />
+
+    <TextView
+        android:id="@+id/longitude2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:text="Longitude"
+        app:layout_constraintStart_toStartOf="@+id/pathos2"
+        app:layout_constraintTop_toBottomOf="@+id/pathos2" />
+
+    <TextView
+        android:id="@+id/ct2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="CT"
+        app:layout_constraintStart_toStartOf="@+id/cardios2"
+        app:layout_constraintTop_toBottomOf="@+id/cardios2" />
+
+    <TextView
+        android:id="@+id/mri2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="19dp"
+        android:text="MRI"
+        app:layout_constraintBottom_toTopOf="@+id/pathos2"
+        app:layout_constraintEnd_toEndOf="@+id/erValue2" />
+
+    <TextView
+        android:id="@+id/pathos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Path OS"
+        app:layout_constraintEnd_toEndOf="@+id/mri2"
+        app:layout_constraintStart_toEndOf="@+id/mri2"
+        app:layout_constraintTop_toBottomOf="@+id/erValue2" />
+
+    <TextView
+        android:id="@+id/hospitalName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hospital Name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hospitalName"
+        app:layout_constraintStart_toStartOf="@+id/hospitalId2" />
+
+    <TextView
+        android:id="@+id/hospitalId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="96dp"
+        android:text="Hospital ID"
+        app:layout_constraintStart_toEndOf="@+id/hospitalName2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hospitalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Hospital Name"
+        app:layout_constraintStart_toStartOf="@+id/hospitalId"
+        app:layout_constraintTop_toBottomOf="@+id/hospitalId" />
+
+    <TextView
+        android:id="@+id/xray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:text="Xray"
+        app:layout_constraintBottom_toTopOf="@+id/anesthos"
+        app:layout_constraintStart_toStartOf="@+id/anesthos" />
+
+    <TextView
+        android:id="@+id/anesthos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="Anesthos"
+        app:layout_constraintStart_toStartOf="@+id/hospitalName"
+        app:layout_constraintTop_toTopOf="@+id/anesthos2" />
+
+    <TextView
+        android:id="@+id/cardios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Cardios"
+        app:layout_constraintStart_toStartOf="@+id/anesthos"
+        app:layout_constraintTop_toBottomOf="@+id/anesthos" />
+
+    <TextView
+        android:id="@+id/ct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="CT"
+        app:layout_constraintStart_toStartOf="@+id/cardios"
+        app:layout_constraintTop_toBottomOf="@+id/cardios" />
+
+    <TextView
+        android:id="@+id/ents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:text="Ents"
+        app:layout_constraintBottom_toTopOf="@+id/erValue"
+        app:layout_constraintStart_toStartOf="@+id/ct" />
+
+    <TextView
+        android:id="@+id/erValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:text="ER Value"
+        app:layout_constraintBottom_toTopOf="@+id/mri"
+        app:layout_constraintEnd_toEndOf="@+id/ents"
+        app:layout_constraintStart_toEndOf="@+id/ents" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="27dp"
+        android:text="Longitude"
+        app:layout_constraintBottom_toTopOf="@+id/latitude"
+        app:layout_constraintStart_toStartOf="@+id/pathos" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude"
+        app:layout_constraintBottom_toBottomOf="@+id/latitude2"
+        app:layout_constraintStart_toStartOf="@+id/longitude"
+        app:layout_constraintTop_toTopOf="@+id/latitude2" />
+
+    <TextView
+        android:id="@+id/mri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="19dp"
+        android:text="MRI"
+        app:layout_constraintBottom_toTopOf="@+id/pathos"
+        app:layout_constraintEnd_toEndOf="@+id/erValue" />
+
+    <TextView
+        android:id="@+id/pathos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Path OS"
+        app:layout_constraintBottom_toTopOf="@+id/longitude"
+        app:layout_constraintEnd_toEndOf="@+id/mri"
+        app:layout_constraintStart_toEndOf="@+id/mri" />
+</androidx.constraintlayout.widget.ConstraintLayout>
